@@ -8,5 +8,5 @@ module.exports = {
   exportPathMap: () => ({
     "/": { page: "/" }
   }),
-  assetPrefix: !debug ? "/2.0.0/" : ""
+  assetPrefix: !debug ? "/2.0.0" : ""
 };
