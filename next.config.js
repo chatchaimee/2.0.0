@@ -5,5 +5,8 @@
 const debug = process.env.NODE_ENV !== "production";
 
 module.exports = {
+  exportPathMap: () => ({
+    "/": { page: "/" }
+  }),
   assetPrefix: !debug ? "/2.0.0/" : ""
 };
