@@ -14,7 +14,7 @@
     "test-all": "yarn lint && yarn type-check && yarn test",
     "check-libs-versions": "ncu -u",
     "export": "next export",
-    "deploy": "rm -rf node_modules/.cache && rm -rf out/ && next build && next export && touch out/.nojekyll && gh-pages -d out -m \"Deploy $(git rev-parse HEAD) to GitHub pages [ci skip]\""
+    "deploy": "rm -rf node_modules/.cache && rm -rf out/ && next build && next export && touch out/.nojekyll && gh-pages --src '{.nojekyll,**/*}' -d out -m \"Deploy $(git rev-parse HEAD) to GitHub pages [ci skip]\""
   },
   "husky": {
     "hooks": {
