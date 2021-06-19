@@ -37,8 +37,7 @@ const About = (): JSX.Element => {
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
-        {/** TODO: Add image path in property {src} */}
-        <img src="" alt="" className="about__img" />
+        <img src="/about__me.jpg" alt="" className="about__img" />
 
         <div className="about__data">
           <p className="about__description">{description}</p>

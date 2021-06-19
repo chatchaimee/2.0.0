@@ -449,6 +449,11 @@ const GlobalStyle = createGlobalStyle`
     align-self: center;
   }
 
+  .about__data {
+    display: grid;
+    align-content: center;
+  }
+
   .about__description {
     text-align: center;
     margin-bottom: var(--mb-2-5);
@@ -975,10 +980,6 @@ const GlobalStyle = createGlobalStyle`
 
     .about__img {
       width: 350px;
-    }
-
-    .about__description {
-      text-align: initial;
     }
 
     .about__info {

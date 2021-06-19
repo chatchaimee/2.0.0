@@ -1,22 +1,4 @@
 {
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.formatOnSave": true
-  },
-  "[css]": {
-    "editor.formatOnSave": true
-  },
   "editor.tabSize": 2,
   "eslint.validate": [
     "javascript",
@@ -25,6 +7,7 @@
     "typescriptreact"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "files.associations": {
     "*.js": "javascript",
     "*.jsx": "javascript",
