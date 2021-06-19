@@ -1,0 +1,32 @@
+export { default as IconAbout } from "components/Icons/IconAbout";
+export { default as IconAngleDown } from "components/Icons/IconAngleDown";
+export { default as IconApp } from "components/Icons/IconApp";
+export { default as IconArrowDown } from "components/Icons/IconArrowDown";
+export { default as IconArrowUp } from "components/Icons/IconArrowUp";
+export { default as IconBrackets } from "components/Icons/IconBrackets";
+export { default as IconCalendar } from "components/Icons/IconCalendar";
+export { default as IconClose } from "components/Icons/IconClose";
+export { default as IconContact } from "components/Icons/IconContact";
+export { default as IconDownload } from "components/Icons/IconDownload";
+export { default as IconFacebook } from "components/Icons/IconFacebook";
+export { default as IconGithub } from "components/Icons/IconGithub";
+export { default as IconGraduation } from "components/Icons/IconGraduation";
+export { default as IconHome } from "components/Icons/IconHome";
+export { default as IconInstagram } from "components/Icons/IconInstagram";
+export { default as IconLinkedin } from "components/Icons/IconLinkedin";
+export { default as IconMail } from "components/Icons/IconMail";
+export { default as IconMoon } from "components/Icons/IconMoon";
+export { default as IconMouse } from "components/Icons/IconMouse";
+export { default as IconSkills } from "components/Icons/IconSkills";
+export { default as IconSun } from "components/Icons/IconSun";
+export { default as IconWork } from "components/Icons/IconWork";
+
+export { default as Layout } from "components/Layout";
+export { default as LayoutHeader } from "components/Layout/components/LayoutHeader";
+export { default as LayoutFooter } from "components/Layout/components/LayoutFooter";
+
+export { default as Home } from "containers/IndexContainer/components/Home";
+export { default as About } from "containers/IndexContainer/components/About";
+export { default as Skills } from "containers/IndexContainer/components/Skills";
+export { default as Qualification } from "containers/IndexContainer/components/Qualification";
+export { default as ContactMe } from "containers/IndexContainer/components/ContactMe";
