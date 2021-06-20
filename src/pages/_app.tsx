@@ -34,11 +34,7 @@ const MyApp = (props: AppProps): JSX.Element => {
         )}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href={`${process.env.BACKEND_URL}/favicon.png`}
-        />
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
 
         <title>{title}</title>
       </Head>

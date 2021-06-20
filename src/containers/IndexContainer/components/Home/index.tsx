@@ -60,7 +60,7 @@ const Home = (): JSX.Element => {
                   className="home__blob-img"
                   x="12"
                   y="18"
-                  xlinkHref={`${process.env.BACKEND_URL}/home__me.png`}
+                  xlinkHref="home__me.png"
                 />
               </g>
             </svg>

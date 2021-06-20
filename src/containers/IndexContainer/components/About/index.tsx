@@ -37,11 +37,7 @@ const About = (): JSX.Element => {
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
-        <img
-          src={`${process.env.BACKEND_URL}/about__me.jpg`}
-          alt=""
-          className="about__img"
-        />
+        <img src="about__me.jpg" alt="" className="about__img" />
 
         <div className="about__data">
           <p className="about__description">{description}</p>
