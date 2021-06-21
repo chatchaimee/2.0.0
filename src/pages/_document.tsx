@@ -40,6 +40,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="icon" type="image/x-icon" href="favicon.png" />
+
           {/** FONTS */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

@@ -4,7 +4,6 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { ThemeProvider } from "styled-components";
 
-import { Layout } from "components";
 import { GlobalStyle, theme } from "styles";
 
 const MyApp = (props: AppProps): JSX.Element => {
@@ -34,14 +33,10 @@ const MyApp = (props: AppProps): JSX.Element => {
         )}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" type="image/x-icon" href="favicon.png" />
-
         <title>{title}</title>
       </Head>
       <ThemeProvider theme={theme}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </ThemeProvider>
       <GlobalStyle />
     </>
