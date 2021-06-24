@@ -6,10 +6,11 @@ import { ThemeProvider } from "styled-components";
 
 import { GlobalStyle, theme } from "styles";
 
+const title = "Chatchai Meesuksabai";
+
 const MyApp = (props: AppProps): JSX.Element => {
   const router = useRouter();
   const { Component, pageProps } = props;
-  const title = "Chatchai Meesuksabai";
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
@@ -26,12 +27,14 @@ const MyApp = (props: AppProps): JSX.Element => {
         <meta name="language" content="TH" />
         <meta name="google" content="notranslate" />
         <meta name="author" content="jayyzdayo" />
+        <meta name="description" content="portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         {router?.pathname !== "/noscript" && (
           <noscript>
             <meta httpEquiv="refresh" content="0; URL=/noscript" />
           </noscript>
         )}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>{title}</title>
       </Head>

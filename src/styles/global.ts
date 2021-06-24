@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
     /** ===== Colors ===== */
     // Change favorite color
-    --hue-color: 195; // Purple 250 - Green 142 - Blue 230 - Pink 340
+    --hue-color: 231; // Purple 250 - Green 142 - Blue 231 - Pink 340
 
     // HSL color mode
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -530,7 +530,7 @@ const GlobalStyle = createGlobalStyle`
 
   .skills__subtitle {
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    color: var(--text-color);
   }
 
   .skills__list {
@@ -545,6 +545,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .skills__name {
+    color: var(--title-color);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
   }
@@ -596,7 +597,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .qualification__button:hover {
-    color: var(--first-color);
+    color: var(--title-color);
 
     svg path {
       fill: var(--first-color);
@@ -633,14 +634,14 @@ const GlobalStyle = createGlobalStyle`
 
   .qualification__calendar {
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+    color: var(--text-color);
 
     svg {
       margin-bottom: -4px;
     }
 
     svg path {
-      fill: var(--text-color-light)
+      fill: var(--text-color)
     }
   }
 
@@ -669,7 +670,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .qualification__button.qualification__active {
-    color: var(--first-color);
+    color: var(--title-color);
 
     svg path {
       fill: var(--first-color)
@@ -709,7 +710,7 @@ const GlobalStyle = createGlobalStyle`
 
   .contact__subtitle {
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    color: var(--text-color);
   }
 
   /** Footer */

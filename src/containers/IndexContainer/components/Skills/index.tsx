@@ -138,7 +138,7 @@ const Skills = (): JSX.Element => {
                 {skills.map(({ name, number }, index) => (
                   <div className="skills__data" key={`${name}_${index}`}>
                     <div className="skills__titles">
-                      <h3 className="skills__name">{name}</h3>
+                      <p className="skills__name">{name}</p>
                       <span className="skills__number">{number}</span>
                     </div>
                     <div className="skills__bar">

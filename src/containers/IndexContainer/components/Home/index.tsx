@@ -10,12 +10,12 @@ const socialLinks = [
   {
     href: "https://www.linkedin.com/in/chatchai-meesuksabai",
     icon: <IconLinkedin />,
-    name: "Home"
+    name: "linkedin"
   },
   {
     href: "https://github.com/chatchaimee",
     icon: <IconGithub />,
-    name: "Home"
+    name: "github"
   }
 ];
 
@@ -32,11 +32,12 @@ const Home = (): JSX.Element => {
       <div className="home__container container grid">
         <div className="home__content grid">
           <div className="home__social">
-            {socialLinks.map(({ href, icon }, index) => (
+            {socialLinks.map(({ href, icon, name }, index) => (
               <a
                 href={href}
                 target="_bank"
                 className="home__social-icon"
+                aria-label={name}
                 key={`${href}_${index}`}
               >
                 {icon}
@@ -68,8 +69,8 @@ const Home = (): JSX.Element => {
 
           <div className="home__data">
             <h1 className="home__title">{title}</h1>
-            <h3 className="home__subtitle">{subtitle}</h3>
-            <p className="home__description">{description}</p>
+            <h2 className="home__subtitle">{subtitle}</h2>
+            <div className="home__description">{description}</div>
             <a href="#contact" className="button button--flex">
               <div className="button__icon">
                 {buttonContactName} <IconContact />

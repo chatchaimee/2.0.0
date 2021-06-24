@@ -10,11 +10,13 @@ const links = [
 const socialLinks = [
   {
     href: "https://www.facebook.com/jayyzdayo",
-    icon: <IconFacebook />
+    icon: <IconFacebook />,
+    name: "facebook"
   },
   {
     href: "https://www.instagram.com/jayyzdayo",
-    icon: <IconInstagram />
+    icon: <IconInstagram />,
+    name: "instagram"
   }
 ];
 
@@ -43,11 +45,12 @@ const LayoutFooter = (): JSX.Element => {
           </ul>
 
           <div className="footer__socials">
-            {socialLinks.map(({ href, icon }, index) => (
+            {socialLinks.map(({ href, icon, name }, index) => (
               <a
                 href={href}
                 target="_blank"
                 className="footer__social"
+                aria-label={name}
                 key={`${href}_${index}`}
                 rel="noreferrer"
               >

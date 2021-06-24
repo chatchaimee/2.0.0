@@ -28,7 +28,7 @@ const Layout = ({ children }: LayoutPropsModel): JSX.Element => {
       <LayoutHeader />
       <main className="main">{children}</main>
       <LayoutFooter />
-      <a href="#" className="scrollup" id="scroll-up">
+      <a href="#" className="scrollup" id="scroll-up" aria-label="scroll-up">
         <div className="scrollup__icon">
           <IconArrowUp />
         </div>
