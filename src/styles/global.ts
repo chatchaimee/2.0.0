@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     --first-color: hsl(var(--hue-color), 62%, 28%);
     --first-color-second: hsl(var(--hue-color), 62%, 34%);
     --first-color-alt: hsl(var(--hue-color), 62%, 40%);
-    --first-color-lighter: hsl(var(--hue-color), 70%, 72%);
+    --first-color-lighter: hsl(var(--hue-color), 70%, 81%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -72,6 +72,7 @@ const GlobalStyle = createGlobalStyle`
   /** Variables dark theme */
   body.dark-theme {
     // HSL color mode
+    --first-color: hsl(var(--hue-color), 70%, 42%);
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -921,6 +922,10 @@ const GlobalStyle = createGlobalStyle`
     .header {
       top: 0;
       bottom: initial;
+    }
+
+    .main {
+      overflow-x: hidden;
     }
 
     .header,
