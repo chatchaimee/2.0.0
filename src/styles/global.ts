@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     --first-color-alt: hsl(var(--hue-color), 62%, 40%);
     --first-color-lighter: hsl(var(--hue-color), 70%, 81%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color: hsl(var(--hue-color), 8%, 34%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 69%, 99%);
