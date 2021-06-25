@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import { HashLoader } from "react-spinners";
 
 import {
   Layout,
@@ -10,33 +11,47 @@ import {
 } from "components";
 
 const IndexContainer = (): JSX.Element => {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const sr = ScrollReveal({
       origin: "top",
       distance: "25px",
-      duration: 2000
+      scale: 0.85,
+      duration: 1000,
+      delay: 500,
+      useDelay: "onload",
+      interval: 100
     });
 
-    sr.reveal(".home__data", { interval: 200 });
-    sr.reveal(".home__subtitle", { interval: 200 });
-    sr.reveal(".home__description", { interval: 200 });
-    sr.reveal(".button", { interval: 200 });
-    sr.reveal(".home__img", { interval: 200 });
-    sr.reveal(".home__social-icon", { interval: 200 });
-    sr.reveal(".home__scroll", { interval: 200 });
+    setTimeout(() => {
+      setLoading(!loading);
+      loadAnimation(sr);
+    }, 2000);
+  }, []);
+
+  const loadAnimation = (sr: scrollReveal.ScrollRevealObject): void => {
+    // Home
+    sr.reveal(".home__data", {});
+    sr.reveal(".home__subtitle", {});
+    sr.reveal(".home__description", {});
+    sr.reveal(".button", {});
+    sr.reveal(".home__img", {});
+    sr.reveal(".home__social-icon", {});
+    sr.reveal(".home__scroll", {});
 
     // About
-    sr.reveal(".section__title, .section__subtitle", { interval: 200 });
-    sr.reveal(".about__img", { interval: 200 });
-    sr.reveal(".about__data", { interval: 200 });
+    sr.reveal(".section__title, .section__subtitle", {});
+    sr.reveal(".about__img", {});
+    sr.reveal(".about__data", {});
 
     // Skills
-    sr.reveal(".skills__content", { interval: 200 });
-    sr.reveal(".qualification__tabs", { interval: 200 });
-    sr.reveal(".qualification__sections", { interval: 200 });
+    sr.reveal(".skills__content", {});
+    sr.reveal(".qualification__tabs", {});
+    sr.reveal(".qualification__sections", {});
 
     // Contact
-    sr.reveal(".contact__information", { interval: 200 });
+    sr.reveal(".contact__information", {});
 
     // Footer
     sr.reveal(
@@ -45,16 +60,24 @@ const IndexContainer = (): JSX.Element => {
         interval: 200
       }
     );
-  }, []);
+  };
 
   return (
-    <Layout>
-      <Home />
-      <About />
-      <Skills />
-      <Qualification />
-      <ContactMe />
-    </Layout>
+    <>
+      {loading ? (
+        <div className="loading__animation">
+          <HashLoader loading={loading} color="#1b5074" size={150} />
+        </div>
+      ) : (
+        <Layout>
+          <Home />
+          <About />
+          <Skills />
+          <Qualification />
+          <ContactMe />
+        </Layout>
+      )}
+    </>
   );
 };
 

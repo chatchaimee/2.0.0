@@ -146,6 +146,12 @@ const GlobalStyle = createGlobalStyle`
     height: auto;
   }
 
+  .loading__animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
   /** Reusable css classes */
   .section {
     padding: 2rem 0 4rem;
