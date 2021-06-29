@@ -84,6 +84,13 @@ const Qualification = (): JSX.Element => {
     });
   }, []);
 
+  const isLastIndex = (
+    index: number,
+    datas: Array<Record<string, string>>
+  ): boolean => {
+    return index === datas.length - 1;
+  };
+
   return (
     <section className="qualification section" id="qualification">
       <h2 className="section__title">{title}</h2>
@@ -118,7 +125,7 @@ const Qualification = (): JSX.Element => {
                     <div></div>
 
                     <QualificationRounderLine
-                      isLastIndex={index === educations.length - 1}
+                      isLastIndex={isLastIndex(index, educations)}
                     />
                   </>
                 ) : null}
@@ -133,7 +140,7 @@ const Qualification = (): JSX.Element => {
 
                 {index % 2 === 0 ? (
                   <QualificationRounderLine
-                    isLastIndex={index === educations.length - 1}
+                    isLastIndex={isLastIndex(index, educations)}
                   />
                 ) : null}
               </div>
@@ -148,7 +155,7 @@ const Qualification = (): JSX.Element => {
                     <div></div>
 
                     <QualificationRounderLine
-                      isLastIndex={index === works.length - 1}
+                      isLastIndex={isLastIndex(index, works)}
                     />
                   </>
                 ) : null}
@@ -163,7 +170,7 @@ const Qualification = (): JSX.Element => {
 
                 {index % 2 === 0 ? (
                   <QualificationRounderLine
-                    isLastIndex={index === works.length - 1}
+                    isLastIndex={isLastIndex(index, works)}
                   />
                 ) : null}
               </div>
