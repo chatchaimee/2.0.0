@@ -5,58 +5,49 @@ import { SkillsValues } from "styles";
 
 const skillsFrontEnds = [
   {
-    name: "JavaScript",
-    number: "90%"
+    name: "JavaScript"
   },
   {
-    name: "TypeScript",
-    number: "50%"
+    name: "TypeScript"
   },
   {
-    name: "Next.js",
-    number: "60%"
+    name: "Next.js"
   },
   {
-    name: "React.js",
-    number: "60%"
+    name: "React.js"
   },
   {
-    name: "Angular",
-    number: "30%"
+    name: "Angular"
   }
 ];
 
 const skillsBackEnds = [
   {
-    name: "PHP",
-    number: "50%"
+    name: "PHP"
   },
   {
-    name: "Laravel",
-    number: "50%"
+    name: "Laravel"
   },
   {
-    name: "Phalcon",
-    number: "50%"
+    name: "Phalcon"
   },
   {
-    name: "Node.js",
-    number: "60%"
+    name: "Node.js"
   },
   {
-    name: "Spring Boot (Kotlin)",
-    number: "30%"
+    name: "Spring Boot (Kotlin)"
   }
 ];
 
 const skillsTools = [
   {
-    name: "Git",
-    number: "80%"
+    name: "Git"
   },
   {
-    name: "Docker",
-    number: "30%"
+    name: "Docker"
+  },
+  {
+    name: "Postman"
   }
 ];
 
@@ -135,14 +126,13 @@ const Skills = (): JSX.Element => {
               </div>
 
               <div className="skills__list grid">
-                {skills.map(({ name, number }, index) => (
+                {skills.map(({ name }, index) => (
                   <div className="skills__data" key={`${name}_${index}`}>
                     <div className="skills__titles">
                       <p className="skills__name">{name}</p>
-                      <span className="skills__number">{number}</span>
                     </div>
                     <div className="skills__bar">
-                      <SkillsValues width={number}>
+                      <SkillsValues width="100">
                         <span className="skills__percentage"></span>
                       </SkillsValues>
                     </div>

@@ -1,4 +1,4 @@
-import { IconFacebook, IconInstagram } from "components";
+import { IconFacebook } from "components";
 
 const links = [
   {
@@ -12,16 +12,11 @@ const socialLinks = [
     href: "https://www.facebook.com/jayyzdayo",
     icon: <IconFacebook />,
     name: "facebook"
-  },
-  {
-    href: "https://www.instagram.com/jayyzdayo",
-    icon: <IconInstagram />,
-    name: "instagram"
   }
 ];
 
 const title = "Chatchai";
-const subtitle = "Development Analyst";
+const subtitle = "Developer";
 // const copyRight = "© Chatchai Meesuksabai. All right reserved";
 
 const LayoutFooter = (): JSX.Element => {

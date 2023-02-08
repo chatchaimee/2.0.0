@@ -2,7 +2,7 @@
 
 const infos = [
   {
-    title: "06+",
+    title: "08+",
     name: (
       <>
         Years <br /> experience

@@ -559,7 +559,7 @@ const GlobalStyle = createGlobalStyle`
 
   .skills__bar,
   .skills__percentage {
-    height: 5px;
+    height: 1px;
     border-radius: .25rem;
   }
 

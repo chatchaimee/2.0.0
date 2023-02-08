@@ -20,7 +20,7 @@ const socialLinks = [
 ];
 
 const title = "Hi, I'am Chatchai";
-const subtitle = "Development Analyst";
+const subtitle = "Developer";
 const description =
   "High level experience in web technology and development knowledge.";
 const buttonContactName = "Contact Me";

@@ -39,7 +39,7 @@ const works = [
     time: "May 2017 – Apr 2018"
   },
   {
-    title: "Development Analyst",
+    title: "Developer",
     subtitle: "Digital Ventures Co., Ltd.",
     time: "Apr 2018 – Present"
   }
